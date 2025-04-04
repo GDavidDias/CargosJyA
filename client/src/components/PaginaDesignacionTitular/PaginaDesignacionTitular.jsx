@@ -72,20 +72,26 @@ const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
     return(
         <div className='notranslate border-2 border-zinc-300 p-4'>
             {/* ENCABEZADO */}
-            <div className="w-full flex flex-row items-center justify-between">
-                <div className="w-[25%] flex">
-                    <img src={logo} className='w-[60%]'/>
+            <div className="w-full flex flex-col items-center justify-between">
+                <div className='w-full flex flex-row'>
+                    <div className="w-[25%] flex">
+                        <img src={logo} className='w-[60%]'/>
+                    </div>
+                    <div className="w-[50%] flex flex-col items-center">
+                        <p className='text-sm font-semibold'>MINISTERIO DE EDUCACION</p>
+                        <p className='text-sm font-semibold'>Sala {id_nivel===1 ?'Inicial' :'Primaria'} de JPCD</p>
+                    </div>
+                    <div className="w-[25%] flex flex-col items-center ">
+                        <p className='text-sm font-semibold'>Av. España N° 1630</p>
+                        <p className='text-sm font-semibold'>San Salvador de Jujuy</p>
+                    </div>
                 </div>
-                <div className="w-[50%] flex flex-col items-center">
-                    <p className='text-sm font-semibold'>MINISTERIO DE EDUCACION</p>
-                    <p className='text-sm font-semibold'>Sala {id_nivel===1 ?'Inicial' :'Primaria'} de JPCD</p>
-                </div>
-                <div className="w-[25%] flex flex-col items-center ">
-                    <p className='text-sm font-semibold'>Av. España N° 1630</p>
-                    <p className='text-sm font-semibold'>San Salvador de Jujuy</p>
+                <div className='w-full flex'>
+                    <p className='border-b-[1px] border-gray-400 w-[790px] text-center text-xs italic mt-2'>"2025 - Año del Décimo Aniversario del reconocimiento de la Bandera Nacional de la Libertad Civil como Símbolo Patrio Histórico"</p>
                 </div>
                 
             </div>
+
             {/* TITULO */}
             <div className='flex justify-center'>
                 <label
@@ -182,7 +188,7 @@ const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
                             })() : ''}
                         </p>*/}
                         {/*<p className='border-b-[1px] border-black w-[350px] text-center text-sm '>{datosVacante.hasta_observacion}</p>*/}
-                        <p className='border-b-[1px] border-black w-[350px] text-center text-sm '>{datosVacante.hasta ?datosVacante.hasta.replace(/\d{2}:\d{2}:\d{2}$/, "").trim() :""}</p>
+                        <p className='border-b-[1px] border-black w-[200px] text-center text-sm '>{datosVacante.hasta ?datosVacante.hasta.replace(/\d{2}:\d{2}:\d{2}$/, "").trim() :""}</p>
 
                     </div>
                     
