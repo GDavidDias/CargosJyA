@@ -242,7 +242,7 @@ const Landing = () => {
                 <div className="h-28  flex flex-col pl-4 justify-center items-center">
                     <label className="desktop:text-[38px] movil:text-xl font-bold text-white" translate='no'>Sistema Entrega de Cargos</label>
                     {/* <label className="desktop:text-[25px] movil:text-lg text-white font-semibold mt-4" translate='no'>Nivel {configSG.nivel?.descripcion}</label> */}
-                    <label className="desktop:text-[25px] movil:text-xl text-white desktop:font-semibold movil:font-light mt-4" translate='no'>Provisionales y Reemplazantes ZONALES</label>
+                    <label className="desktop:text-[25px] movil:text-xl text-green-200 desktop:font-semibold movil:font-light mt-4 " translate='no'>Modalidad JOVENES y ADULTOS</label>
                 </div>
             </div>
 

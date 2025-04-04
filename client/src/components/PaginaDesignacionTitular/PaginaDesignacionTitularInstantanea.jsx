@@ -2,7 +2,7 @@ import logo from '../../assets/logo_designacion.png';
 import firma from '../../assets/firmas.png';
 import { useEffect, useState } from 'react';
 
-const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
+const PaginaDesignacionTitularInstantanea = ({datosInscripto, datosVacante,id_nivel}) =>{
 //console.log('que tiene id_nivel en PaginaDesignacion: ', id_nivel);
     console.log('que ingresa por datosInscripto: ', datosInscripto);
     console.log('que ingresa por datosVacante: ', datosVacante);
@@ -90,7 +90,7 @@ const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
             <div className='flex justify-center'>
                 <label
                     className='font-bold text-lg my-2 '
-                >CONSTANCIA DE DESIGNACION</label>
+                >CONSTANCIA DE DESIGNACION Instantanea</label>
             </div>
             {/* CUERPO */}
             <div>
@@ -103,16 +103,16 @@ const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
                     {/**
                      * 
                     <div className='flex flex-row'>
-                        <p>FECHA: {dia} de {mes} de {año}</p>
-                        <p className='ml-4'>HORA: {horaActual}</p>
-                    </div>
-                     */}
-
-                    <div className='flex flex-row'>
                         <p>FECHA: {varDia} de {nombreMes} de {varAño}</p>
                         <p className='ml-4'>{`Hora: ${horas}:${minutos}:${segundos}`}</p>
-
                     </div>
+                     */}
+                     <div className='flex flex-row'>
+                         <p>FECHA: {dia} de {mes} de {año}</p>
+                         <p className='ml-4'>HORA: {horaActual}</p>
+                     </div>
+
+
                     <p className='font-bold mt-[4px]'>DATOS DEL DOCENTE</p>
                     <div className='flex flex-row'>
                         <p>Orden: </p>
@@ -201,4 +201,4 @@ const PaginaDesignacionTitular = ({datosInscripto, datosVacante,id_nivel}) =>{
     )
 };
 
-export default PaginaDesignacionTitular;
+export default PaginaDesignacionTitularInstantanea;
